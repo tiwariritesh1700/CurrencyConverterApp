@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2C3335"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="0.00"
+        android:textColor="#FFF"
+        android:textSize="45sp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="#333945"
+        app:layout_constraintHorizontal_bias="0.0"
+        />
+
+    <EditText
+        android:id="@+id/edittext"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:hint="₹ "
+        android:textColor="#FFF"
+        android:textSize="45sp"
+        android:textColorHint="#FFF"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal"
+        android:background="#535C68"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:weightSum="3"
+        app:layout_constraintTop_toBottomOf="@+id/edittext"
+        >
+        <Button
+            android:id="@+id/button_euro"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#2F363F"
+            android:textColor="#7B8788"
+            android:text="€ "
+            android:textSize="30sp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            />
+        <Button
+            android:id="@+id/button_dollar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#2F363F"
+            android:textColor="#7B8788"
+            android:text="$ "
+            android:textSize="30sp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/button_pound"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#2F363F"
+            android:textColor="#7B8788"
+            android:text="£ "
+            android:textSize="30sp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal"
+        android:background="#535C68"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:weightSum="3"
+        app:layout_constraintTop_toBottomOf="@+id/linearlayout"
+        >
+        <Button
+            android:id="@+id/button_yen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#2F363F"
+            android:textColor="#7B8788"
+            android:text="¥ "
+            android:textSize="30sp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            />
+        <Button
+            android:id="@+id/button_dinar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#2F363F"
+            android:textColor="#7B8788"
+            android:text="ع.د"
+            android:textSize="30sp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            />
+        <Button
+            android:id="@+id/button_bitcoin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#2F363F"
+            android:textColor="#7B8788"
+            android:text="BTC"
+            android:textSize="30sp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#535C68"
+        android:orientation="horizontal"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear_layout2"
+        >
+
+        <Button
+            android:id="@+id/button_rube1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#2F363F"
+            android:textColor="#7B8788"
+            android:text="₽ "
+            android:textSize="30sp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/button_ausdollar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#2F363F"
+            android:textColor="#7B8788"
+            android:text="AUS$ "
+            android:textSize="30sp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/button_candollar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#2F363F"
+            android:textColor="#7B8788"
+            android:text="Can$ "
+            android:textSize="30sp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
